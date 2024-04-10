@@ -1,0 +1,227 @@
+
+
+.nav-items{
+ 
+  display: flex;
+ 
+}
+.conti {
+  display: flex;
+  justify-content: center;
+  margin-right: 15px;
+  border: 1px solid grey;
+  width: 100%;
+  height: 30px;
+  padding: 15px;
+}
+a{
+  text-decoration: none;
+  margin-right: 25px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+.conti a:hover{
+  color: aqua;
+}
+.nav-items .conti a {
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  border-bottom: 2px solid aqua;
+ 
+
+  
+  transition: .5s;
+}
+a:hover{
+  transform: scale(0) translateY(30px);
+  opacity: 1;
+  border-bottom: 2px solid red;
+  transition: 1.0s ease-out;
+}
+.list-2:hover{
+  
+    transform: scale(0) translateY(30px);
+    opacity: 1;
+    border-bottom: 2px solid red;
+    transition: 1.0s ease-out;
+  
+}
+
+.items-2{
+  display: flex;
+  margin-right: 45px; 
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+li{
+  list-style: none;
+  margin-right: 25px;
+ cursor: pointer;
+ 
+}
+.list-1 
+{
+  font-size: 18px;
+  
+  font-weight: bold;
+}
+
+
+
+.btn{
+  border-radius: 10px;
+  height: 30px;
+  margin-right: 25px;
+  cursor: pointer;
+}
+.list-2{
+  margin-right: 40px;
+
+}
+p::first-line{
+  font-size: 50px;
+  margin-left: 250px;
+  float: left;
+}
+#set{
+ margin-top: 50px;
+ float: right;
+  margin-right: 100px;
+ 
+}
+#set:hover{
+  transform: translateY(-0.5rem) ;
+  transform: scale(1.1);
+}
+.pe{
+  font-size: 60px;
+  margin-left: 110px;
+}
+.lap{
+  margin-left: 110px;
+  margin-top: -30px;
+  font-size: 20px;
+}
+.tot{
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin-left: 500px;
+  font-size: 40px;
+  margin-top: 500px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 50%;
+}
+.portion{
+  float:left;
+  width: 50%;
+  box-sizing: border-box;
+  padding: 20px;
+  height: 200px;
+} 
+.rate{
+  display: flex;
+  justify-content: center;
+  margin-top: -664px;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.rate-1{
+  display: flex;
+  justify-content: center;
+  margin-top: -8px;
+  justify-content: space-evenly;
+  font-size: 25px;
+}
+.container{
+  max-width: 1200px;
+  width:95%;
+  margin-left: 150px;
+}
+.slider-wrapper .image-list{
+  display: grid;
+  font-size: 0;
+  scrollbar-width: none;
+  margin-bottom: 30px;
+  overflow-x: auto;
+  grid-template-columns: repeat(10, 1fr);
+  gap:18px;
+}
+.slider-wrapper .image-list::-webkit-scrollbar{
+  display: none;
+}
+.slider-wrapper .image-list .image-item{
+  object-fit: cover;
+}
+.container .slider-scrollbar{
+  height: 24px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.slider-scrollbar .scrollbar-track{
+  height: 2px;
+  width: 100%;
+  position: relative;
+  border-radius: 4px;
+  background: #ccc;
+}
+.slider-scrollbar:hover .scrollbar-track{
+  height: 4px;
+
+}
+.slider-scrollbar .scrollbar-thumb:active{
+   cursor: grabbing;
+   height: 8px;
+   top:-2px;
+   
+}
+.slider-scrollbar .scrollbar-thumb{
+  height: 100%;
+  width: 50%;
+  background: #000;
+  border-radius: inherit;
+  cursor: grab;
+  position: absolute;
+}
+.slider-scrollbar .scrollbar-thumb::after{
+  content: "";
+  position: absolute;
+  left: 0;
+  top:-10px;
+  right: 0;
+  bottom: -10px;
+
+}
+.hoverText{
+  transition: .035s font-weight,0.35s color;
+}
+.hoverText:hover{
+  font-weight: 900;
+  color: gold;
+  transform: scale(2.1);
+}
+.hoverText:hover + .hoverText{
+  font-weight: 1000;
+  color: gold;
+}
+.hoverText:hover + .hoverText + .hoverText{
+  font-weight: 400;
+  
+}
+.hoverText:has(+ .hoverText:hover){
+  font-weight: 300;
+  color: gold;
+}
+.hoverText:has(+ .hoverText + .hoverText:hover){
+  font-weight: 300;
+}
